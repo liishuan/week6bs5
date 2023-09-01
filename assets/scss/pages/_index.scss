@@ -1,3 +1,301 @@
-.index-title {
-  font-size: 100px;
+// 第一塊 banner
+
+.banner {
+  .imgBlock {
+    background-image: url(../images/13.jpg);
+    height: 518px;
+    background-position: center;
+    background-size: cover;
+  }
+  img {
+    width: 80px;
+    height: 80px;
+  }
+  li {
+    width: 196px;
+    height: 196px;
+  }
+
+  .searchMoreBtn {
+    width: 196px;
+    height: 196px;
+    padding: 38px 50px;
+    line-height: 1;
+    color: #ffffff;
+    p {
+      font-size: 48px;
+    }
+  }
+
+  .searchMoreBtn:hover {
+    color: #fbff22;
+  }
+
+  .row {
+    padding: 48px 0px;
+  }
+
+  ul {
+    margin-bottom: 48px;
+    padding-left: 0px;
+  }
+
+  .col-12 {
+    padding-right: 0px;
+  }
 }
+
+@media (max-width: 720px) {
+  .banner {
+    padding: 0px 12px;
+    ul {
+      margin-bottom: 8px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      width: 112px;
+      height: 112px;
+    }
+    .row {
+      padding: 0px 0px 24px 0px;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .searchMoreBtn {
+      padding: 24px 32px;
+      width: 112px;
+      height: 112px;
+      line-height: 1;
+      color: #ffffff;
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+// 第二塊 recent
+.double-right {
+  height: 16px;
+  width: 16px;
+}
+
+.sparkle {
+  width: 24px;
+  height: 24px;
+}
+
+.cardFooter {
+  padding-bottom: 12.5px;
+  padding-top: 12.5px;
+  border-top: 2px solid #030303;
+  border-bottom: 2px solid #030303;
+}
+
+.recent ul {
+  padding-left: 0px;
+}
+
+// 圖片
+
+.recentImg1 {
+  background-image: url(../images/01.jpg);
+  height: 255px;
+  background-position: center;
+  background-size: cover;
+}
+
+.recentImg2 {
+  background-image: url(../images/02.jpg);
+  height: 255px;
+  background-position: center;
+  background-size: cover;
+}
+
+.recentImg3 {
+  background-image: url(../images/03.jpg);
+  height: 255px;
+  background-position: center;
+  background-size: cover;
+}
+
+.recentImg4 {
+  background-image: url(../images/04.jpg);
+  height: 255px;
+  background-position: center;
+  background-size: cover;
+}
+
+.recentImg5 {
+  background-image: url(../images/05.jpg);
+  height: 255px;
+  background-position: center;
+  background-size: cover;
+}
+
+.recentImg6 {
+  background-image: url(../images/06.jpg);
+  height: 255px;
+  background-position: center;
+  background-size: cover;
+}
+
+// 第三塊 online
+.onlineImg {
+  background-image: url(../images/online.jpg);
+  height: 317px;
+  background-position: center -330px;
+  background-size: auto;
+}
+
+.hashtag {
+  padding: 4px 24px;
+  border: 1px solid #000000;
+  border-left: 4px solid #000000;
+}
+
+// 不知道為啥他會分兩段變色
+
+.btn-primary :hover {
+  color: #fbff22;
+}
+
+// 第四塊 活動集錦
+
+// 跑馬燈
+.scroll {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 24px 0px 24px 0px;
+  display: flex;
+  background: black;
+  height: 94px;
+  .text {
+    color: #fbff22;
+    font-size: 32px;
+    font-weight: 700;
+    white-space: nowrap;
+    text-transform: uppercase;
+    animation: scroll 40s linear infinite;
+    &:nth-child(2) {
+      animation: scroll2 40s linear infinite;
+      animation-delay: -20s;
+    }
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll2 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+.albumsImg1 {
+  background-image: url(../images/album1.jpg);
+  height: 274px;
+  background-position: center;
+  background-size: cover;
+}
+
+.albumsImg2 {
+  background-image: url(../images/album2.jpg);
+  height: 274px;
+  background-position: center;
+  background-size: cover;
+}
+
+.albumsImg3 {
+  background-image: url(../images/album3.jpg);
+  height: 274px;
+  background-position: center;
+  background-size: cover;
+}
+
+.albumsImg4 {
+  background-image: url(../images/album4.jpg);
+  height: 274px;
+  background-position: center;
+  background-size: cover;
+}
+
+.albumsCard {
+  position: relative;
+}
+
+.tag {
+  background-color: #ffffff;
+  position: absolute;
+  top: 0px;
+  left: 35%;
+  transform: rotate(-4deg);
+}
+
+@media (max-width: 720px) {
+  .row {
+    padding: 0px 12px;
+  }
+}
+
+// 第五塊 us
+.us {
+  .box {
+    width: 50%;
+    border: 2px solid #030303;
+  }
+  h3 {
+    border-bottom: 2px solid #030303;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  i {
+    width: 32px;
+    height: 32px;
+    background-color: #030303;
+    padding: 8px;
+    color: white;
+  }
+  input {
+    padding: 16px 24px;
+    background-color: #ffffff00;
+    width: 100%;
+    margin-bottom: 58px;
+  }
+  .btn-primary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .us {
+    flex-wrap: wrap;
+    .box {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+    input {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+// 第六塊 小語錄

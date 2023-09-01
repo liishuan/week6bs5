@@ -1,0 +1,59 @@
+.header {
+  border-bottom: 3px solid #030303;
+  padding: 0px 72px;
+}
+
+h1 {
+  margin-right: 48px;
+}
+.logoImg {
+  width: 53px;
+  height: 53px;
+}
+
+input {
+  width: 100%;
+  padding: 16px 24px;
+  border-radius: 0px;
+  border: 1px solid #030303;
+  height: 51px;
+}
+
+.blackSearch {
+  width: 51px;
+  height: 51px;
+}
+
+.blackSearch :hover {
+  color: #fbff22;
+}
+
+.link {
+  margin-bottom: 0;
+  padding-left: 0;
+
+  i {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.header .btn-menu {
+  padding: 4px 12px;
+  border: 1px solid #030303;
+  border-radius: 4px;
+  img {
+    width: 30px;
+    height: 30px;
+    color: #030303;
+  }
+}
+
+@media (max-width: 720px) {
+  .header {
+    padding: 0px 12px;
+    h1 {
+      margin-right: 0;
+    }
+  }
+}

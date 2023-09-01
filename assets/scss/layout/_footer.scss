@@ -1,0 +1,10 @@
+.footer {
+  border-top: 3px solid #030303;
+  height: 87px;
+}
+
+@media (max-width: 720px) {
+  .footer {
+    height: 68px;
+  }
+}

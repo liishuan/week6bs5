@@ -5,9 +5,488 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+    <!-- font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon  -->
+    <link rel="stylesheet" href="../assets/scss/icofont/icofont.min.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    /> -->
   </head>
   <body>
-    <%- include('./layout/header'); -%> <%- include('./layout/footer'); -%>
+    <%- include('./layout/header'); -%>
+    <!-- 第一塊 banner -->
+    <div class="banner pt-8">
+      <div class="container">
+        <div class="row">
+          <div
+            class="imgBlock col-12 p-12 d-flex flex-column justify-content-between"
+          >
+            <p class="fs-15 text-light">19 MAY 2023</p>
+
+            <div class="justify-content-center">
+              <p class="fs-6 fw-bold text-center text-light mb-4">
+                隔牆有耳-沒有草東的派對
+              </p>
+              <p class="text-center text-light">
+                你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！
+                <br />
+                帶上啤酒、野餐墊，讓我們在Live
+                House外面一起開場「沒有草東的派對」吧！
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <ul class="row d-flex flex-wrap justify-content-between">
+            <li
+              class="border border-primary border-2 d-flex flex-column justify-content-center align-items-center col-4 col-md-2"
+            >
+              <a href="#">
+                <img
+                  src="../assets/images/cate01.svg"
+                  alt="音符"
+                  class="mb-3"
+                />
+                <p class="fs-6 text-center">演出</p>
+              </a>
+            </li>
+
+            <li
+              class="border border-primary border-2 d-flex flex-column justify-content-center align-items-center col-4 col-md-2"
+            >
+              <a href="#">
+                <img
+                  src="../assets/images/cate02.svg"
+                  alt="聯誼"
+                  class="mb-3"
+                />
+                <p class="fs-6 text-center">聯誼</p>
+              </a>
+            </li>
+
+            <li
+              class="border border-primary border-2 d-flex flex-column justify-content-center align-items-center col-4 col-md-2"
+            >
+              <a href="#">
+                <img
+                  src="../assets/images/cate03.svg"
+                  alt="展覽"
+                  class="mb-3"
+                />
+                <p class="fs-6 text-center">展覽</p>
+              </a>
+            </li>
+
+            <li
+              class="border border-primary border-2 d-flex flex-column justify-content-center align-items-center col-4 col-md-2"
+            >
+              <a href="#">
+                <img
+                  src="../assets/images/cate04.svg"
+                  alt="美食"
+                  class="mb-3"
+                />
+                <p class="fs-6 text-center">美食</p>
+              </a>
+            </li>
+
+            <li
+              class="border border-primary border-2 d-flex flex-column justify-content-center align-items-center col-4 col-md-2"
+            >
+              <a href="#">
+                <img
+                  src="../assets/images/cate05.svg"
+                  alt="戶外"
+                  class="mb-3"
+                />
+                <p class="fs-6 text-center">戶外</p>
+              </a>
+            </li>
+
+            <li
+              class="border border-primary border-2 d-flex flex-column justify-content-center btn btn-primary align-items-center col-4 col-md-2"
+            >
+              <a href="#" class="searchMoreBtn">
+                <p class="text-center fw-bold mb-2">探索</p>
+                <p class="text-center fw-bold">更多</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第二塊 recent -->
+    <div class="container recent">
+      <div class="row">
+        <div
+          class="col-12 d-flex justify-content-between py-6 px-8 align-items-center border border-3 mb-8"
+        >
+          <h2 class="fs-16">RECENT</h2>
+          <h3 class="fs-8">近期活動</h3>
+        </div>
+
+        <div>
+          <ul class="d-flex flex-wrap row">
+            <li class="col-12 col-md-4 mb-12">
+              <p class="fs-12 pb-3 border-bottom border-3 mb-3">19 MAY 2023</p>
+
+              <div class="recentImg1"></div>
+
+              <p class="fs-6 fw-bold pt-3">邪典電影派對——房間</p>
+              <p class="pb-4 pt-3">
+                你有聽說過「大災難家」裡面的主角 Tommy Wiseau
+                製作的「史上最爛的電影」——房間嗎？在美國甚至演變成一種邪教、一種派對的形式，在電影播放的對著螢幕丟...
+              </p>
+              <div class="d-flex justify-content-between cardFooter">
+                <a href="#" class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/sparkler.png"
+                    alt="sparkle"
+                    class="sparkle"
+                  />
+                  <p>社群活動</p>
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                  <p>開賣中</p>
+                  <!-- 不知道為啥跑不出來 -->
+                  <!-- <i class="icofont-rounded-double-right"></i> -->
+                  <img
+                    src="../assets/images/rounded-double-right.svg"
+                    alt="雙箭頭"
+                    class="double-right"
+                  />
+                </a>
+              </div>
+            </li>
+
+            <li class="col-12 col-md-4 mb-12">
+              <p class="fs-12 pb-3 border-bottom border-3 mb-3">23 MAY 2023</p>
+              <div class="recentImg2"></div>
+              <p class="fs-6 fw-bold pt-3">怪舞俱樂部</p>
+              <p class="pb-4 pt-3">
+                覺得自己的舞蹈細胞異於常人？每次隨著音樂起舞身邊的人總是露出無法理解的表情？來這裡就對了！來參加這場一起跳舞的聚會，也會在每一次的舞會中選出舞步最怪的...
+              </p>
+              <div class="d-flex justify-content-between cardFooter">
+                <a href="#" class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/sparkler.png"
+                    alt="sparkle"
+                    class="sparkle"
+                  />
+                  <p>演出</p>
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                  <p>檢視活動</p>
+                  <!-- 不知道為啥跑不出來 -->
+                  <!-- <i class="icofont-rounded-double-right"></i> -->
+                  <img
+                    src="../assets/images/rounded-double-right.svg"
+                    alt="雙箭頭"
+                    class="double-right"
+                  />
+                </a>
+              </div>
+            </li>
+
+            <li class="col-12 col-md-4 mb-12">
+              <p class="fs-12 pb-3 border-bottom border-3 mb-3">30 MAY 2023</p>
+              <div class="recentImg3"></div>
+              <p class="fs-6 fw-bold pt-3">哈利波特馬拉松</p>
+              <p class="pb-4 pt-3">
+                每次身邊有人開啟哈利波特的話題，自己永遠都是聽不懂的那個麻瓜？看大家在討論魁地奇、用咒語鬥法的時候，自己永遠是陪笑的那個人？穿好你的法袍、帶上你的法杖...
+              </p>
+              <div class="d-flex justify-content-between cardFooter">
+                <a href="#" class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/sparkler.png"
+                    alt="sparkle"
+                    class="sparkle"
+                  />
+                  <p>聯誼</p>
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                  <p>開賣中</p>
+                  <!-- 不知道為啥跑不出來 -->
+                  <!-- <i class="icofont-rounded-double-right"></i> -->
+                  <img
+                    src="../assets/images/rounded-double-right.svg"
+                    alt="雙箭頭"
+                    class="double-right"
+                  />
+                </a>
+              </div>
+            </li>
+
+            <li class="col-12 col-md-4 mb-12">
+              <p class="fs-12 pb-3 border-bottom border-3 mb-3">12 June 2023</p>
+              <div class="recentImg4"></div>
+              <p class="fs-6 fw-bold pt-3">皮卡丘排球大賽</p>
+              <p class="pb-4 pt-3">
+                還記得小時候玩的小遊戲嗎？總是有朋友吹噓自己獨孤求敗、只求一敗？是時候該展現真正的實力了！本活動採用瑞士制賽程，以絕對公平的方式進行，是時候該證明自己...
+              </p>
+              <div class="d-flex justify-content-between cardFooter">
+                <a href="#" class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/sparkler.png"
+                    alt="sparkle"
+                    class="sparkle"
+                  />
+                  <p>遊戲競賽</p>
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                  <p>開賣中</p>
+                  <!-- 不知道為啥跑不出來 -->
+                  <!-- <i class="icofont-rounded-double-right"></i> -->
+                  <img
+                    src="../assets/images/rounded-double-right.svg"
+                    alt="雙箭頭"
+                    class="double-right"
+                  />
+                </a>
+              </div>
+            </li>
+            <li class="col-12 col-md-4 mb-12">
+              <p class="fs-12 pb-3 border-bottom border-3 mb-3">25 June 2023</p>
+              <div class="recentImg5"></div>
+              <p class="fs-6 fw-bold pt-3">酒精路跑</p>
+              <p class="pb-4 pt-3">
+                身邊總是有對自己酒量有高度自信的朋友嗎？拉著他/她一起來參加酒精路跑吧！一起拍下第一杯直到倒下為止的照片，一起喝遍市區內各家極具品味的酒吧。
+              </p>
+              <div class="d-flex justify-content-between cardFooter">
+                <a href="#" class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/sparkler.png"
+                    alt="sparkle"
+                    class="sparkle"
+                  />
+                  <p>社群活動</p>
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                  <p>開賣中</p>
+                  <!-- 不知道為啥跑不出來 -->
+                  <!-- <i class="icofont-rounded-double-right"></i> -->
+                  <img
+                    src="../assets/images/rounded-double-right.svg"
+                    alt="雙箭頭"
+                    class="double-right"
+                  />
+                </a>
+              </div>
+            </li>
+            <li class="col-12 col-md-4 mb-12">
+              <p class="fs-12 pb-3 border-bottom border-3 mb-3">9 July 2023</p>
+              <div class="recentImg6"></div>
+              <p class="fs-6 fw-bold pt-3">展覽——我的房間</p>
+              <p class="pb-4 pt-3">
+                每個人的房間總會有那麼一兩個能代表自己的物事，或許是再平凡不過的牙刷、馬克杯，或許有那些別人的房間從沒出現過的小東西——那些能定義自己的特別的東西。
+              </p>
+              <div class="d-flex justify-content-between cardFooter">
+                <a href="#" class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/sparkler.png"
+                    alt="sparkle"
+                    class="sparkle"
+                  />
+                  <p>展覽</p>
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                  <p>開賣中</p>
+                  <!-- 不知道為啥跑不出來 -->
+                  <!-- <i class="icofont-rounded-double-right"></i> -->
+                  <img
+                    src="../assets/images/rounded-double-right.svg"
+                    alt="雙箭頭"
+                    class="double-right"
+                  />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第三塊 online -->
+    <div class="container online">
+      <div class="row">
+        <div
+          class="col-12 d-flex justify-content-between py-6 px-8 align-items-center border border-3 mb-8"
+        >
+          <h2 class="fs-16">ONLINE</h2>
+          <h3 class="fs-8">近期活動</h3>
+        </div>
+
+        <div class="row mb-md-15 mb-8">
+          <div class="col-md-7 col-12">
+            <div class="landscape">
+              <div class="onlineImg"></div>
+            </div>
+          </div>
+          <div
+            class="col-md-5 col-12 ps-6 d-flex flex-column justify-content-between"
+          >
+            <div>
+              <h3 class="fs-8 fw-bold mb-4">切特居批踢</h3>
+              <div class="d-flex mb-8">
+                <a class="hashtag me-2" href="#">競賽</a>
+                <a class="hashtag me-2" href="#">科技</a>
+                <a class="hashtag me-2" href="#">有趣</a>
+              </div>
+              <p class="mb-8">
+                最近網路上很流行的AI程式
+                ChatGPT，可以用來聊天或是查詢、整理各種資料，不同的應用方式如雨後春筍般冒出來。
+                這個活動讓大家把自己最有特色的使用方法提出來讓大家參考，也會投票出最有趣的用法。
+                <br />
+                該讓其他人知道自己使用 ChatGPT 的姿勢才是最特別的那個了！
+              </p>
+            </div>
+
+            <div
+              class="btn btn-primary d-flex align-items-center justify-content-center py-2"
+            >
+              <p class="me-1 fs-5 fw-bold">查看活動詳情</p>
+              <i class="icofont-rounded-double-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第四塊 活動集錦 -->
+    <div class="albums">
+      <!-- 跑馬燈 -->
+      <div class="scroll">
+        <div class="text">
+          活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS
+        </div>
+        <div class="text">
+          活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS
+        </div>
+      </div>
+      <div class="container pt-15 pb-4">
+        <div class="row">
+          <div class="albumsCard col-md-3 border p-4 mb-11">
+            <div class="py-2 px-4 tag">社群活動</div>
+
+            <div class="albumsImg1 mb-4"></div>
+            <p class="fw-bold pb-8">無聲派對-閉閉嘴dancing</p>
+          </div>
+
+          <div class="albumsCard col-md-3 border p-4 mb-11">
+            <div class="py-2 px-4 tag">藝文活動</div>
+
+            <div class="albumsImg2 mb-4"></div>
+            <p class="fw-bold pb-8">拯救老店大作戰</p>
+          </div>
+
+          <div class="albumsCard col-md-3 border p-4 mb-11">
+            <div class="py-2 px-4 tag">自我覺察</div>
+
+            <div class="albumsImg3 mb-4"></div>
+            <p class="fw-bold pb-8">內觀修行-部落篇</p>
+          </div>
+
+          <div class="albumsCard col-md-3 border p-4 mb-11">
+            <div class="py-2 px-4 tag">聯誼活動</div>
+
+            <div class="albumsImg4 mb-4"></div>
+            <p class="fw-bold pb-8">賞櫻野餐</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 跑馬燈 -->
+
+      <div class="scroll">
+        <div class="text">
+          活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS
+        </div>
+        <div class="text">
+          活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS
+        </div>
+      </div>
+    </div>
+
+    <!-- 第五塊 us -->
+    <div class="us container d-flex py-15">
+      <div class="box">
+        <h3 class="py-4 px-8 fs-8 fw-bold">#FOLLOW US</h3>
+        <div
+          class="d-flex flex-column justify-content-between p-md-8 py-4 px-3"
+        >
+          <p class="mb-8">
+            想第一時間獲得新奇有趣的活動資訊？
+            <br />追蹤我們的社群吧！<br />
+            也歡迎你聯繫我們，提供好玩有趣的活動企劃。
+          </p>
+          <ul>
+            <li class="mb-4">
+              <a href="#" class="d-flex align-items-center">
+                <i class="icofont-ui-email me-4"></i>
+                <p>7tao.event@gmail.com</p>
+              </a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="d-flex align-items-center">
+                <i class="icofont-phone me-4"></i>
+                <p>09123123123</p>
+              </a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="d-flex align-items-center">
+                <i class="icofont-facebook me-4"></i>
+                <p>7TAO七逃</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box d-flex flex-column justify-content-between">
+        <h3 class="py-4 px-8 fs-8 fw-bold">#SUBSCRIBE US</h3>
+
+        <div>
+          <div class="p-md-8 py-4 px-3">
+            <p class="mb-8">
+              訂閱電子報送折價券！<br />
+              定期精選文章資訊及最新優惠資訊，<br />
+              還不通通給我訂閱起來？
+            </p>
+            <input type="text" placeholder="輸入Email" />
+          </div>
+          <div
+            class="btn btn-primary py-2 d-flex justify-content-center align-items-center"
+          >
+            <p class="fw-bold fs-5">確認訂閱</p>
+            <i class="icofont-rounded-double-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第六塊 小語錄-->
+    <div class="border-top border-2 py-15">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="text-center fs-8 fw-bold">
+              此刻打盹，你將做夢；此刻學習，你將圓夢
+            </p>
+            <p class="text-center fs-1 fw-bold">——我也不知道誰說的</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
   </body>
